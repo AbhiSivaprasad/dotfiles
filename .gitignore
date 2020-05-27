@@ -1,0 +1,5 @@
+# tmux plugin manager will track plugins
+tmux/plugins/*
+
+# track the tmux plugin manager
+!tmux/plugins/tpm
