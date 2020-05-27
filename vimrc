@@ -5,6 +5,7 @@ set autoindent
 set number
 set tags=~/.tags
 set termguicolors
+set mouse=a
 " Autoloads NERDTree if file is specified
 autocmd vimenter * NERDTree
 
@@ -21,4 +22,13 @@ let g:NERDTreeMapPreviewVSplit = 'gv'
 inoremap jk <esc>
 inoremap kj <esc>
 
-let g:gruvbox_termcolors=16
+syntax enable
+set background=dark
+colorscheme gruvbox
+
+if &term =~ '256color'
+	" disable Background Color Erase (BCE) so that color schemes
+	" render properly when inside 256-color tmux and GNU screen.
+	" see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+	set t_ut=
+endif
