@@ -6,6 +6,16 @@ set number
 set tags=~/.tags
 set termguicolors
 set mouse=a
+
+" Don't use this with filetype plugin indent on
+" What are advantages of this over per filetype indent?
+" set smartindent
+
+" Indent based on filetype
+if has("autocmd")
+	filetype plugin indent on
+endif
+
 " Autoloads NERDTree if file is specified
 autocmd vimenter * NERDTree
 
@@ -19,6 +29,10 @@ let g:NERDTreeMapPreviewSplit = 'gh'
 let g:NERDTreeMapOpenVSplit = 'v'
 let g:NERDTreeMapPreviewVSplit = 'gv'
 
+" if NERDTree sidebar is the only open window then close vim
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" remap escape key
 inoremap jk <esc>
 inoremap kj <esc>
 
