@@ -47,14 +47,6 @@ if &term =~ '256color'
 	set t_ut=
 endif
 
-" MUST BE AT END OF FILE
-" Load all plugins now.
-" Plugins need to be added to runtimepath before helptags can be generated.
-packloadall
-" Load all of the helptags now, after plugins have been loaded.
-" All messages and errors will be ignored.
-silent! helptags ALL
-
 " Color the status bar in the active and inactive windows differently to quickly differentiate
 hi StatusLine   ctermfg=15  guifg=#ffffff ctermbg=239 guibg=#4e4e4e cterm=bold gui=bold
 hi StatusLineNC ctermfg=249 guifg=#b2b2b2 ctermbg=237 guibg=#3a3a3a cterm=none gui=none
@@ -74,3 +66,11 @@ augroup numbertoggle
 	autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 	autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+" MUST BE AT END OF FILE
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
