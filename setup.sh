@@ -1,7 +1,7 @@
-ln -s ~/.vim ~/.dotfiles/vim
-ln -s ~/.vimrc ~/.dotfiles/vimrc
-ln -s ~/.tmux ~/.dotfiles/tmux
-ln -s ~/.tmux.conf ~/.dotfiles/tmux.conf
+ln -s ~/.dotfiles/vim ~/.vim
+ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/tmux ~/.tmux
+ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 
 cd ~/.dotfiles
 git submodule update --init --recursive
