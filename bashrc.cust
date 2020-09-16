@@ -3,9 +3,6 @@ if [ -e $HOME/.dotfiles/bash_aliases ]; then
     source $HOME/.dotfiles/bash_aliases
 fi
 
-# fuzzy reverse search
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # color palette for vim
 source "$HOME/.vim/pack/plugins/start/gruvbox/gruvbox_256palette.sh"
 
