@@ -1,6 +1,6 @@
 # load bash aliases
-if [ -e $HOME/.bash_aliases ]; then
-    source $HOME/.bash_aliases
+if [ -e $HOME/.dotfiles/bash_aliases ]; then
+    source $HOME/.dotfiles/bash_aliases
 fi
 
 # fuzzy reverse search
