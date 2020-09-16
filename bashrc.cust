@@ -15,3 +15,8 @@ PS1="abhi> "
 # bash vi mode
 set -o vi
 bind '"jk":vi-movement-mode'
+
+# set default editor to vim
+# useful when typing 'v' in command mode bash prompt 
+export VISUAL=vim
+export EDITOR="$VISUAL"
