@@ -19,3 +19,6 @@
 [submodule "vim/pack/plugins/start/jedi-vim"]
 	path = vim/pack/plugins/start/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "vim/pack/plugins/start/supertab"]
+	path = vim/pack/plugins/start/supertab
+	url = https://github.com/ervandew/supertab
