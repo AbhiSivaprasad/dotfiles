@@ -12,7 +12,7 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 " Paste
-set pastetoggle=<F2>
+" set pastetoggle=<F2>
 
 " Search
 set hlsearch
@@ -31,6 +31,10 @@ endif
 " Ale settings 
 let g:ale_echo_cursor = 0  " Cursor visible on error lines
 
+" Supertab setting
+" https://vi.stackexchange.com/questions/5416/cant-get-jedis-autocompletion-on-supertab
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
 
 " Autoloads NERDTree if file is specified
 autocmd vimenter * NERDTree
