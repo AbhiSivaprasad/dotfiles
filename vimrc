@@ -7,6 +7,18 @@ set tags=~/.tags
 set termguicolors
 set mouse=a
 
+" Unmap space from potential mappings above and set leader
+nnoremap <SPACE> <Nop> 
+let mapleader = " "
+
+" Paste
+set pastetoggle=<F2>
+
+" Search
+set hlsearch
+set incsearch
+nnoremap <Leader><space> :noh<cr>
+
 " Don't use this with filetype plugin indent on
 " What are advantages of this over per filetype indent?
 " set smartindent
@@ -15,6 +27,10 @@ set mouse=a
 if has("autocmd")
 	filetype plugin indent on
 endif
+
+" Ale settings 
+let g:ale_echo_cursor = 0  " Cursor visible on error lines
+
 
 " Autoloads NERDTree if file is specified
 autocmd vimenter * NERDTree
