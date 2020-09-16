@@ -1,0 +1,17 @@
+# load bash aliases
+if [ -e $HOME/.bash_aliases ]; then
+    source $HOME/.bash_aliases
+fi
+
+# fuzzy reverse search
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# color palette for vim
+source "$HOME/.vim/pack/plugins/start/gruvbox/gruvbox_256palette.sh"
+
+# set bash prompt
+PS1="abhi> "
+
+# bash vi mode
+set -o vi
+bind '"jk":vi-movement-mode'
