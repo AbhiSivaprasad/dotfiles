@@ -19,7 +19,10 @@ set hlsearch
 set incsearch
 nnoremap <Leader><space> :noh<cr>
 
-" Don't use this with filetype plugin indent on
+" Change cursor to line in insert mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 " What are advantages of this over per filetype indent?
 " set smartindent
 
