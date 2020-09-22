@@ -28,3 +28,6 @@
 [submodule "vim/pack/plugins/start/rhubarb"]
 	path = vim/pack/plugins/start/rhubarb
 	url = https://github.com/tpope/vim-rhubarb
+[submodule "vim/pack/plugins/start/autopep8"]
+	path = vim/pack/plugins/start/autopep8
+	url = https://github.com/tell-k/vim-autopep8
