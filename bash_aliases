@@ -6,5 +6,6 @@ alias gs='git status'
 alias ga='git add'
 alias gl='git log'
 alias gd='git diff'
+alias gv='git log --graph --decorate --oneline'
 
 alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
