@@ -19,27 +19,6 @@ set hlsearch
 set incsearch
 nnoremap <Leader><space> :noh<cr>
 
-" git fugitive bindings
-" https://stackoverflow.com/questions/15369499/how-can-i-view-git-diff-for-any-commit-using-vim-fugitive/15370684
-nnoremap <leader>gs :Gstatus<CR>
-nnoremap <leader>gc :Gcommit -v -q<CR>
-nnoremap <leader>ga :Gcommit --amend<CR>
-nnoremap <leader>gt :Gcommit -v -q %<CR>
-nnoremap <leader>gd :Gdiff<CR>
-nnoremap <leader>gf :diffget //2<CR>
-nnoremap <leader>gj :diffget //3<CR>
-nnoremap <leader>ge :Gedit<CR>
-nnoremap <leader>gr :Gread<CR>
-nnoremap <leader>gw :Gwrite<CR><CR>
-nnoremap <leader>gl :silent! Glog<CR>
-nnoremap <leader>gp :Ggrep<Space>
-nnoremap <leader>gm :Gmove<Space>
-nnoremap <leader>gb :Git branch<Space>
-nnoremap <leader>go :Git checkout<Space>
-nnoremap <leader>gps :Dispatch! git push<CR>
-nnoremap <leader>gpl :Dispatch! git pull<CR>
-
-
 " Change cursor to line in insert mode
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
@@ -56,14 +35,6 @@ set switchbuf+=usetab,newtab
 
 " Ale settings 
 let g:ale_echo_cursor = 0  " Cursor visible on error lines
-
-" Supertab setting
-" https://vi.stackexchange.com/questions/5416/cant-get-jedis-autocompletion-on-supertab
-let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabContextDefaultCompletionType = "<c-x><c-o>"
-
-" Jedi settings
-let g:jedi#popup_on_dot = 0
 
 " Autoloads NERDTree if file is specified
 autocmd vimenter * NERDTree

@@ -17,3 +17,7 @@ bind '"jk":vi-movement-mode'
 # useful when typing 'v' in command mode bash prompt 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+# set git credentials
+git config --global user.name "AbhiSivaprasad"
+git config --global user.email "abhi@live.com"
