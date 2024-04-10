@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Replace with the path to your extensions list file
-EXTENSIONS_FILE="./vscode-extensions.txt"
+SCRIPT_DIR="$(dirname "$0")"
+EXTENSIONS_FILE="$SCRIPT_DIR/vscode-extensions.txt"
 
 while IFS= read -r extension
 do
