@@ -8,10 +8,12 @@ cd ~/.dotfiles
 git submodule update --init --recursive
 
 # source custom bashrc from default bashrc
-echo "[ -z \"\$PS1\" ] && return" 	  >> ~/.bashrc  # don't load bashrc on interactive sessions
+echo "[ -z \"\$PS1\" ] && return" 	  >> ~/.bashrc  # don't load bashrc on non-interactive sessions
 echo "source ~/.dotfiles/bashrc.cust" >> ~/.bashrc  # source custom bashrc
 source ~/.bashrc
 
 # instally fuzzy reverse search
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --key-bindings --completion --update-rc
+
+# TODO: add a secure method to store keys in the cloud and download them + add them to keychain
