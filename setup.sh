@@ -8,7 +8,7 @@ cd ~/.dotfiles
 git submodule update --init --recursive
 
 # source custom bashrc from default bashrc
-echo "[ -z \"$PS1\" ] && return" 	  >> ~/.bashrc  # don't load bashrc on interactive sessions
+echo "[ -z \"\$PS1\" ] && return" 	  >> ~/.bashrc  # don't load bashrc on interactive sessions
 echo "source ~/.dotfiles/bashrc.cust" >> ~/.bashrc  # source custom bashrc
 source ~/.bashrc
 
